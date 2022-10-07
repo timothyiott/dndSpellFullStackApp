@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>DnD 5e Spell list</h1></header>
+    <div id="bannerCanvas">
+    <div id="searchArea" class="inputArea">
+        <input type="text" id="searchField">
+        <button type="button" id="searchButton" onclick="searchSpells()">Search</button>
+    </div>
+    <div id="updateArea" class="inputArea">
+        <label for="oldname">Old Spell Name</label>
+        <input name="oldname" id="oldname">
+        <label for="newname">New Spell Name</label>
+        <input name="newname" id="newname">
+        <button type="button" id="update" onclick="updateSpells()">Update</button>
+    </div>
+    <div id="addSpellArea" class="inputArea">
+        <label for="name">Spell Name</label>
+        <input name="name" id="name">
+        <button type="button" id="update" onclick="addSpell()">Add Spell</button>
+    </div>
+    <div id="viewAllArea" class = "inputArea">
+        <button type="button" id="viewAllbtn" onclick="loadAllSpells()">Vew All Spells</button>
+    </div>
+    <div id="deleteArea" class="inputArea">
+        <button type="butotn" id="deleteButton" onclick="deleteSpell()">Delete Selected Spell</button>
+    </div>
+</div>
+    <div id="results">
+        <div class="result-card" id="home"><h1>Feel Free to search for a spell!</h1></div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

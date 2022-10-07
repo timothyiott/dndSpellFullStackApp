@@ -1,0 +1,26 @@
+{
+  "name": "dndspellsapi",
+  "version": "1.0.0",
+  "description": "This will be an API that allows the user to pull a list of spells available in DnD 5e.",
+  "main": "expressSpellAPIServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon expressSpellAPIServer.js",
+    "start:deploy": "node expressSpellAPIServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Segerlu/dndSpellsAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Segerlu/dndSpellsAPI/issues"
+  },
+  "homepage": "https://github.com/Segerlu/dndSpellsAPI#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "pg": "^8.8.0"
+  }
+}
